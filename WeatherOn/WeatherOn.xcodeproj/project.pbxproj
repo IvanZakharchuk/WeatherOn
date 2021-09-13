@@ -23,6 +23,7 @@
 		7880A45226EF8E1E00D07327 /* BaseTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A45126EF8E1E00D07327 /* BaseTexts.swift */; };
 		7880A45426EF8F2C00D07327 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A45326EF8F2C00D07327 /* UIView+CornerRadius.swift */; };
 		7880A45626EF8F7100D07327 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A45526EF8F7100D07327 /* NibDesignable.swift */; };
+		7880A45926EF99E200D07327 /* WeatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A45826EF99E200D07327 /* WeatherApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		7880A45126EF8E1E00D07327 /* BaseTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTexts.swift; sourceTree = "<group>"; };
 		7880A45326EF8F2C00D07327 /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
 		7880A45526EF8F7100D07327 /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
+		7880A45826EF99E200D07327 /* WeatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		7880A44126EF7A8A00D07327 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				7880A45726EF99CD00D07327 /* Services */,
 				7880A44526EF7B7500D07327 /* Extensions */,
 				7880A44426EF7B6D00D07327 /* Constants */,
 				7880A44326EF7B6100D07327 /* UI */,
@@ -198,6 +201,14 @@
 			children = (
 			);
 			path = WeatherFlow;
+			sourceTree = "<group>";
+		};
+		7880A45726EF99CD00D07327 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7880A45826EF99E200D07327 /* WeatherApi.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +346,7 @@
 				7880A44826EF8C9400D07327 /* BaseViewController.swift in Sources */,
 				7880A44A26EF8CAB00D07327 /* BaseView.swift in Sources */,
 				7880A44026EF7A7500D07327 /* BaseCoordinator.swift in Sources */,
+				7880A45926EF99E200D07327 /* WeatherApi.swift in Sources */,
 				7880A44E26EF8DB100D07327 /* UITableViewCell+Xib.swift in Sources */,
 				7880A43E26EF793A00D07327 /* WeatherCoordinator.swift in Sources */,
 				7880A44C26EF8CE400D07327 /* Functions.swift in Sources */,
