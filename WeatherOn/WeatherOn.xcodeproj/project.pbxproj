@@ -15,6 +15,15 @@
 		7880A43026EF782C00D07327 /* WeatherOnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A42F26EF782C00D07327 /* WeatherOnUITests.swift */; };
 		7880A43E26EF793A00D07327 /* WeatherCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A43D26EF793A00D07327 /* WeatherCoordinator.swift */; };
 		7880A44026EF7A7500D07327 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A43F26EF7A7500D07327 /* BaseCoordinator.swift */; };
+		7880A44826EF8C9400D07327 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A44726EF8C9400D07327 /* BaseViewController.swift */; };
+		7880A44A26EF8CAB00D07327 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A44926EF8CAB00D07327 /* BaseView.swift */; };
+		7880A44C26EF8CE400D07327 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A44B26EF8CE400D07327 /* Functions.swift */; };
+		7880A44E26EF8DB100D07327 /* UITableViewCell+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A44D26EF8DB100D07327 /* UITableViewCell+Xib.swift */; };
+		7880A45026EF8E0A00D07327 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A44F26EF8E0A00D07327 /* UIViewController+Alert.swift */; };
+		7880A45226EF8E1E00D07327 /* BaseTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A45126EF8E1E00D07327 /* BaseTexts.swift */; };
+		7880A45426EF8F2C00D07327 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A45326EF8F2C00D07327 /* UIView+CornerRadius.swift */; };
+		7880A45626EF8F7100D07327 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A45526EF8F7100D07327 /* NibDesignable.swift */; };
+		7880A45926EF99E200D07327 /* WeatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A45826EF99E200D07327 /* WeatherApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		7880A43126EF782C00D07327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7880A43D26EF793A00D07327 /* WeatherCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCoordinator.swift; sourceTree = "<group>"; };
 		7880A43F26EF7A7500D07327 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		7880A44726EF8C9400D07327 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7880A44926EF8CAB00D07327 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		7880A44B26EF8CE400D07327 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		7880A44D26EF8DB100D07327 /* UITableViewCell+Xib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Xib.swift"; sourceTree = "<group>"; };
+		7880A44F26EF8E0A00D07327 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		7880A45126EF8E1E00D07327 /* BaseTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTexts.swift; sourceTree = "<group>"; };
+		7880A45326EF8F2C00D07327 /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
+		7880A45526EF8F7100D07327 /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
+		7880A45826EF99E200D07327 /* WeatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +148,10 @@
 		7880A44126EF7A8A00D07327 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				7880A45726EF99CD00D07327 /* Services */,
+				7880A44526EF7B7500D07327 /* Extensions */,
+				7880A44426EF7B6D00D07327 /* Constants */,
+				7880A44326EF7B6100D07327 /* UI */,
 				7880A44226EF7A9300D07327 /* Coordinators */,
 			);
 			path = Source;
@@ -142,6 +164,51 @@
 				7880A43F26EF7A7500D07327 /* BaseCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		7880A44326EF7B6100D07327 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7880A44626EF7B8400D07327 /* WeatherFlow */,
+				7880A44726EF8C9400D07327 /* BaseViewController.swift */,
+				7880A44926EF8CAB00D07327 /* BaseView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7880A44426EF7B6D00D07327 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7880A45126EF8E1E00D07327 /* BaseTexts.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		7880A44526EF7B7500D07327 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7880A44B26EF8CE400D07327 /* Functions.swift */,
+				7880A44D26EF8DB100D07327 /* UITableViewCell+Xib.swift */,
+				7880A44F26EF8E0A00D07327 /* UIViewController+Alert.swift */,
+				7880A45326EF8F2C00D07327 /* UIView+CornerRadius.swift */,
+				7880A45526EF8F7100D07327 /* NibDesignable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7880A44626EF7B8400D07327 /* WeatherFlow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WeatherFlow;
+			sourceTree = "<group>";
+		};
+		7880A45726EF99CD00D07327 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7880A45826EF99E200D07327 /* WeatherApi.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +341,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7880A45226EF8E1E00D07327 /* BaseTexts.swift in Sources */,
 				7880A40E26EF782B00D07327 /* AppDelegate.swift in Sources */,
+				7880A44826EF8C9400D07327 /* BaseViewController.swift in Sources */,
+				7880A44A26EF8CAB00D07327 /* BaseView.swift in Sources */,
 				7880A44026EF7A7500D07327 /* BaseCoordinator.swift in Sources */,
+				7880A45926EF99E200D07327 /* WeatherApi.swift in Sources */,
+				7880A44E26EF8DB100D07327 /* UITableViewCell+Xib.swift in Sources */,
 				7880A43E26EF793A00D07327 /* WeatherCoordinator.swift in Sources */,
+				7880A44C26EF8CE400D07327 /* Functions.swift in Sources */,
+				7880A45626EF8F7100D07327 /* NibDesignable.swift in Sources */,
+				7880A45026EF8E0A00D07327 /* UIViewController+Alert.swift in Sources */,
+				7880A45426EF8F2C00D07327 /* UIView+CornerRadius.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
