@@ -24,6 +24,12 @@
 		7880A45426EF8F2C00D07327 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A45326EF8F2C00D07327 /* UIView+CornerRadius.swift */; };
 		7880A45626EF8F7100D07327 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A45526EF8F7100D07327 /* NibDesignable.swift */; };
 		7880A45926EF99E200D07327 /* WeatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A45826EF99E200D07327 /* WeatherApi.swift */; };
+		7880A45B26F08A2800D07327 /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A45A26F08A2700D07327 /* UIImageView+URL.swift */; };
+		7880A45F26F08B6400D07327 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A45D26F08B6400D07327 /* CountriesViewController.swift */; };
+		7880A46026F08B6400D07327 /* CountriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7880A45E26F08B6400D07327 /* CountriesViewController.xib */; };
+		7880A46226F08B8500D07327 /* CountriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A46126F08B8500D07327 /* CountriesView.swift */; };
+		7880A46526F08E3F00D07327 /* CountriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A46326F08E3F00D07327 /* CountriesTableViewCell.swift */; };
+		7880A46626F08E3F00D07327 /* CountriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7880A46426F08E3F00D07327 /* CountriesTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +73,12 @@
 		7880A45326EF8F2C00D07327 /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
 		7880A45526EF8F7100D07327 /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
 		7880A45826EF99E200D07327 /* WeatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApi.swift; sourceTree = "<group>"; };
+		7880A45A26F08A2700D07327 /* UIImageView+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
+		7880A45D26F08B6400D07327 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		7880A45E26F08B6400D07327 /* CountriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesViewController.xib; sourceTree = "<group>"; };
+		7880A46126F08B8500D07327 /* CountriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesView.swift; sourceTree = "<group>"; };
+		7880A46326F08E3F00D07327 /* CountriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewCell.swift; sourceTree = "<group>"; };
+		7880A46426F08E3F00D07327 /* CountriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +204,7 @@
 				7880A44F26EF8E0A00D07327 /* UIViewController+Alert.swift */,
 				7880A45326EF8F2C00D07327 /* UIView+CornerRadius.swift */,
 				7880A45526EF8F7100D07327 /* NibDesignable.swift */,
+				7880A45A26F08A2700D07327 /* UIImageView+URL.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -199,6 +212,7 @@
 		7880A44626EF7B8400D07327 /* WeatherFlow */ = {
 			isa = PBXGroup;
 			children = (
+				7880A45C26F08B4500D07327 /* Countries */,
 			);
 			path = WeatherFlow;
 			sourceTree = "<group>";
@@ -209,6 +223,18 @@
 				7880A45826EF99E200D07327 /* WeatherApi.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		7880A45C26F08B4500D07327 /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				7880A45D26F08B6400D07327 /* CountriesViewController.swift */,
+				7880A45E26F08B6400D07327 /* CountriesViewController.xib */,
+				7880A46126F08B8500D07327 /* CountriesView.swift */,
+				7880A46326F08E3F00D07327 /* CountriesTableViewCell.swift */,
+				7880A46426F08E3F00D07327 /* CountriesTableViewCell.xib */,
+			);
+			path = Countries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +343,8 @@
 				7880A41A26EF782C00D07327 /* LaunchScreen.storyboard in Resources */,
 				7880A41726EF782C00D07327 /* Assets.xcassets in Resources */,
 				7880A41526EF782B00D07327 /* Main.storyboard in Resources */,
+				7880A46026F08B6400D07327 /* CountriesViewController.xib in Resources */,
+				7880A46626F08E3F00D07327 /* CountriesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,10 +370,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7880A45226EF8E1E00D07327 /* BaseTexts.swift in Sources */,
+				7880A45F26F08B6400D07327 /* CountriesViewController.swift in Sources */,
 				7880A40E26EF782B00D07327 /* AppDelegate.swift in Sources */,
 				7880A44826EF8C9400D07327 /* BaseViewController.swift in Sources */,
 				7880A44A26EF8CAB00D07327 /* BaseView.swift in Sources */,
 				7880A44026EF7A7500D07327 /* BaseCoordinator.swift in Sources */,
+				7880A46526F08E3F00D07327 /* CountriesTableViewCell.swift in Sources */,
+				7880A45B26F08A2800D07327 /* UIImageView+URL.swift in Sources */,
 				7880A45926EF99E200D07327 /* WeatherApi.swift in Sources */,
 				7880A44E26EF8DB100D07327 /* UITableViewCell+Xib.swift in Sources */,
 				7880A43E26EF793A00D07327 /* WeatherCoordinator.swift in Sources */,
@@ -353,6 +384,7 @@
 				7880A45626EF8F7100D07327 /* NibDesignable.swift in Sources */,
 				7880A45026EF8E0A00D07327 /* UIViewController+Alert.swift in Sources */,
 				7880A45426EF8F2C00D07327 /* UIView+CornerRadius.swift in Sources */,
+				7880A46226F08B8500D07327 /* CountriesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
