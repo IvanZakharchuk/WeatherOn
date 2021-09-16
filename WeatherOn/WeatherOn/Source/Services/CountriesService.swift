@@ -8,34 +8,52 @@
 import Foundation
 import Alamofire
 
-class CountriesService {
+protocol Networking {
+    
+    func getData()
+}
+
+enum URLs: String {
+    case countriesURL = "https://restcountries.eu/rest/v2/all"
+    case weatherURL = ""
+    case weatherApiKey = " "
+}
+
+class CountriesService: Networking {
     
     // MARK: -
     // MARK: Properties
     
     //https://restcountries.eu/rest/v2/all
-    fileprivate var baseURL = ""
+    private var baseURL = ""
     
     // MARK: -
     // MARK: Initialization
     
-    private init(baseURL: String) {
-        self.baseURL = baseURL
+    public init() {
+        self.baseURL = URLs.countriesURL.rawValue
     }
     
     // MARK: -
     // MARK: Networking
     
-    private func getCountry(name: String) {
+    public func getData() {
         AF.request(
-            self.baseURL + name,
+            self.baseURL,
             method: .get,
             parameters: nil,
             encoding: URLEncoding.default,
             headers: nil,
             interceptor: nil).response {
                 (responseData) in
-                print("We got the response")
+                guard let data = responseData.data else { return }
+                do {
+                    let countries = try JSONDecoder().decode([Country].self, from: data)
+                    print("countries = \(countries)")
+                } catch {
+                    print("Error decoding = \(error)")
+                }
+                print(data)
         }
     }
 }
