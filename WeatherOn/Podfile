@@ -6,6 +6,7 @@ target 'WeatherOn' do
   use_frameworks!
 
   # Pods for WeatherOn
+pod 'Alamofire', '~> 5.4'
 
   target 'WeatherOnTests' do
     inherit! :search_paths
