@@ -12,6 +12,14 @@ enum  CountriesViewControllerEvents {
 }
 
 class CountriesViewController: BaseViewController<CountriesView, CountriesViewEvents, CountriesViewControllerEvents> {
+    
+    // MARK: -
+    // MARK: Properties
+    
+//    private let countryService = CountriesService(baseUr)
+    
+    // MARK: -
+    // MARK: Overrided
 
     override func viewDidLoad() {
         super.viewDidLoad()
