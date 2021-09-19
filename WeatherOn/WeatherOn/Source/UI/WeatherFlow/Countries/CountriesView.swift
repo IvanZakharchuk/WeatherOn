@@ -25,5 +25,4 @@ class CountriesView: BaseView<CountriesViewEvents> {
     override func setupView() {
         self.countriesTableView?.register(cell: CountriesTableViewCell.self)
     }
-    
 }

@@ -21,5 +21,7 @@ class CountriesTableViewCell: UITableViewCell {
     public func setupCountriesCell(countryName: String, flagImage: String) {
         self.countryName?.text = countryName
         self.flagImage?.image = UIImage(named: flagImage)
+        
+        self.cornerRadius(radius: 12)
     }
 }

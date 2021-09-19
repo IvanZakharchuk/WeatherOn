@@ -8,14 +8,8 @@
 import Foundation
 
 struct Country: Decodable {
+    
     var name: String?
     var capital: String?
-    var countryFlag: String?
-    
-    enum CodingKeys: String, CodingKey {
-        case name = "name"
-        case capital = "capital"
-        case countryFlag = "flag"
-        
-    }
+    var flag: String?
 }
