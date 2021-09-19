@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         
-        let coordinator = WeatherCoordinator()
+        let coordinator = WeatherOnCoordinator(networking: CountriesService())
         window.rootViewController = coordinator
         window.makeKeyAndVisible()
         self.window = window

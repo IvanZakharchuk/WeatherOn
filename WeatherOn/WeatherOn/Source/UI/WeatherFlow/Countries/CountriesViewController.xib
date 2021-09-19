@@ -22,8 +22,8 @@
                     <rect key="frame" x="0.0" y="80" width="414" height="782"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
-                        <outlet property="dataSource" destination="i5M-Pr-FkT" id="HDC-s0-taM"/>
-                        <outlet property="delegate" destination="i5M-Pr-FkT" id="JP1-TL-QdY"/>
+                        <outlet property="dataSource" destination="-1" id="MhV-Kh-CXx"/>
+                        <outlet property="delegate" destination="-1" id="Fs3-wR-X0E"/>
                     </connections>
                 </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeatherOn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nim-hl-RDo">
