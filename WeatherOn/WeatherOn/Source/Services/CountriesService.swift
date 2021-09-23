@@ -22,12 +22,18 @@ enum URLs: String {
 
 class CountriesService: Networking {
     
+    typealias countriesCallBack = (
+        _ countries: [Country]?,
+        _ status: Bool,
+        _ message: String) -> Void
+    
     // MARK: -
     // MARK: Properties
     
     //https://restcountries.eu/rest/v2/all
     private var baseURL = ""
     private var countries = [Country]()
+    var callBack: countriesCallBack?
     
     // MARK: -
     // MARK: Initialization
@@ -55,37 +61,22 @@ class CountriesService: Networking {
             headers: nil,
             interceptor: nil).response {
                 (responseData) in
-                guard let data = responseData.data else { return }
+                guard let data = responseData.data else {
+                    self.callBack?(nil, false, "")
+                    return }
                 do {
                     let countries = try JSONDecoder().decode([Country].self, from: data)
+                    self.callBack?(countries, true, "")
                     print("countries = \(countries)")
                 } catch {
+                    self.callBack?(nil, false, error.localizedDescription)
                     print("Error decoding = \(error)")
                 }
                 print(data)
             }
     }
-    
-//    public func getData() -> [Country] {
-//        self.countries = [Country]()
-//
-//        AF.request(
-//            self.baseURL,
-//            method: .get,
-//            parameters: nil,
-//            encoding: URLEncoding.default,
-//            headers: nil,
-//            interceptor: nil).response {
-//                (responseData) in
-//                guard let data = responseData.data else { return }
-//                do {
-//                    self.countries = try JSONDecoder().decode([Country].self, from: data)
-//                    print("countries = \(self.countries)")
-//                } catch {
-//                    print("Error decoding = \(error)")
-//                }
-//                print(data)
-//        }
-//        return countries ?? [Country]()
-//    }
+
+    public func completionHandler(callBack: @escaping countriesCallBack) {
+        self.callBack = callBack
+    }
 }
