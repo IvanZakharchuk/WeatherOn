@@ -21,11 +21,12 @@ enum URLs: String {
 }
 
 class CountriesService: Networking {
+    func getData() {
+        
+    }
     
-    typealias countriesCallBack = (
-        _ countries: [Country]?,
-        _ status: Bool,
-        _ message: String) -> Void
+//    typealias callBalc = (countries: [Country]?, status: Bool, message: String) -> Void
+    typealias CountriesCallBack = (_ countries: [Country]?,_ status: Bool,_ message: String) -> Void
     
     // MARK: -
     // MARK: Properties
@@ -33,7 +34,7 @@ class CountriesService: Networking {
     //https://restcountries.eu/rest/v2/all
     private var baseURL = ""
     private var countries = [Country]()
-    var callBack: countriesCallBack?
+    var callBack: CountriesCallBack?
     
     // MARK: -
     // MARK: Initialization
@@ -52,20 +53,24 @@ class CountriesService: Networking {
     // MARK: -
     // MARK: Networking
     
-    public func getData() {
+    public func data() -> DataRequest {
         AF.request(
             self.baseURL,
             method: .get,
             parameters: nil,
             encoding: URLEncoding.default,
             headers: nil,
-            interceptor: nil).response {
+            interceptor: nil
+        )
+            .response {
                 (responseData) in
                 guard let data = responseData.data else {
                     self.callBack?(nil, false, "")
                     return }
                 do {
+                    
                     let countries = try JSONDecoder().decode([Country].self, from: data)
+                    self.callBack?(countries, true, "")
                     self.callBack?(countries, true, "")
                     print("countries = \(countries)")
                 } catch {
@@ -76,7 +81,7 @@ class CountriesService: Networking {
             }
     }
 
-    public func completionHandler(callBack: @escaping countriesCallBack) {
+    public func completionHandler(callBack: @escaping CountriesCallBack) {
         self.callBack = callBack
     }
 }

@@ -33,6 +33,7 @@
 		7880A46226F08B8500D07327 /* CountriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A46126F08B8500D07327 /* CountriesView.swift */; };
 		7880A46526F08E3F00D07327 /* CountriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7880A46326F08E3F00D07327 /* CountriesTableViewCell.swift */; };
 		7880A46626F08E3F00D07327 /* CountriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7880A46426F08E3F00D07327 /* CountriesTableViewCell.xib */; };
+		78EBDD3E2704953300CC2A20 /* AlomofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EBDD3D2704953300CC2A20 /* AlomofireService.swift */; };
 		9651A3E4695D64B17C957316 /* Pods_WeatherOn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172DE420AB2D4F5BA43E43F0 /* Pods_WeatherOn.framework */; };
 		FAE70DC9FBA6FB3038A3FAE5 /* Pods_WeatherOn_WeatherOnUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63BC55B2C80614FE6A21CE4 /* Pods_WeatherOn_WeatherOnUITests.framework */; };
 /* End PBXBuildFile section */
@@ -92,6 +93,7 @@
 		7880A46126F08B8500D07327 /* CountriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesView.swift; sourceTree = "<group>"; };
 		7880A46326F08E3F00D07327 /* CountriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewCell.swift; sourceTree = "<group>"; };
 		7880A46426F08E3F00D07327 /* CountriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesTableViewCell.xib; sourceTree = "<group>"; };
+		78EBDD3D2704953300CC2A20 /* AlomofireService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlomofireService.swift; sourceTree = "<group>"; };
 		AC55614A39EA57BFBAF3E043 /* Pods-WeatherOn-WeatherOnUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherOn-WeatherOnUITests.debug.xcconfig"; path = "Target Support Files/Pods-WeatherOn-WeatherOnUITests/Pods-WeatherOn-WeatherOnUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF60E3FC5D467F5603C2F1CA /* Pods-WeatherOnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherOnTests.release.xcconfig"; path = "Target Support Files/Pods-WeatherOnTests/Pods-WeatherOnTests.release.xcconfig"; sourceTree = "<group>"; };
 		B63BC55B2C80614FE6A21CE4 /* Pods_WeatherOn_WeatherOnUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherOn_WeatherOnUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -265,6 +267,7 @@
 			children = (
 				7880A45826EF99E200D07327 /* WeatherApi.swift */,
 				7829CC2026F36982007209FF /* CountriesService.swift */,
+				78EBDD3D2704953300CC2A20 /* AlomofireService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				7880A44E26EF8DB100D07327 /* UITableViewCell+Xib.swift in Sources */,
 				7880A43E26EF793A00D07327 /* WeatherOnCoordinator.swift in Sources */,
 				7880A44C26EF8CE400D07327 /* Functions.swift in Sources */,
+				78EBDD3E2704953300CC2A20 /* AlomofireService.swift in Sources */,
 				7880A45626EF8F7100D07327 /* NibDesignable.swift in Sources */,
 				7880A45026EF8E0A00D07327 /* UIViewController+Alert.swift in Sources */,
 				7880A45426EF8F2C00D07327 /* UIView+CornerRadius.swift in Sources */,
