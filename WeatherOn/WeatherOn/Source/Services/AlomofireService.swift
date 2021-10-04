@@ -6,10 +6,16 @@
 //
 
 import Foundation
+import Alamofire
 
-class AlomofireService {
+class AlomofireService<Model> {
     func get() {
         
+    }
+    
+    func data(model: Model) -> DataRequest {
+        
+        return
     }
 }
   
